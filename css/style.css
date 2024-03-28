@@ -270,6 +270,7 @@ html, body {
 }
 
 .kv .mkv{
+  width: 100%;
   display: none;
 }
 
@@ -472,11 +473,17 @@ html, body {
   padding-top: 40px;
 }
 
-.footer .footerbox h2{
+.footer .footerbox h2 a{
+  display: block;
+  text-decoration: none;
   color: #fff;
   margin-top: 16px;
   font-size: 22px;
   letter-spacing: 6px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer .footerbox p{
@@ -500,7 +507,7 @@ html, body {
   transition: 0.3s;
 }
 
-.footerbox .allicon a:hover{
+.footerbox .allicon a:hover,.footer .footerbox h2 a:hover{
   opacity: 0.8;
 }
 
@@ -652,6 +659,10 @@ html, body {
   .box01 .txt ul{
     width: 95%;
     font-size: 5vw;
+  }
+
+  .box01 .txt ul li{
+    line-height: 7vw;
   }
 
   .box01 .txt .tip{
